@@ -1,22 +1,23 @@
 <template>
-    
-        <h1>Who's This Pokémon?</h1>
+    <h1>Who's That Pokémon?</h1>
         
-        <pokemon-picture />
+    <pokemon-picture :pokemonId="4" :showPokemon="true"/>
 
-        <pokemon-options />
+    <pokemon-options />
+            
 </template>
 
 <script>
-import PokemonOptions from '../components/PokemonOptions'
-import PokemonPicture from '../components/PokemonPicture'
+import PokemonOptions from '@/components/PokemonOptions'
+import PokemonPicture from '@/components/PokemonPicture'
+
+import getPokemonOptions from '@/helpers/getPokemonOptions'
+
 
 export default {
-  components: { PokemonPicture, PokemonOptions },
+    components: { PokemonOptions, PokemonPicture },
+     
+    
 
 }
 </script>
-
-<style>
-
-</style>
